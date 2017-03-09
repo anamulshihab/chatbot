@@ -12,9 +12,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-group :development, :test do
-  gem 'byebug', platform: :mri
-end
+
 group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
@@ -34,4 +32,15 @@ group :development do
 end
 group :development, :test do
   gem 'rubocop'
+end
+# Programr: rails gem for manage AIML files
+gem 'programr'
+
+group :development, :test do
+  gem 'byebug'
+end
+
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
 end
