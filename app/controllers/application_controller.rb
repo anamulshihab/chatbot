@@ -7,4 +7,9 @@ class ApplicationController < ActionController::Base
     reaction = CHIQUIBOT.get_reaction(params[:query])    
     render json: { response: reaction.present? ? reaction : 'Sorry i cant answer that!!' }
   end
+
+   def ask_estonian
+	reaction = CHATBOT.get_reaction(params[:query])    
+    render json: { response: reaction.present? ? reaction : 'Sorry i cant ans that!!' }
+  end
 end

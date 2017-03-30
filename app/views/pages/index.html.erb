@@ -1,9 +1,15 @@
 <h1>Chatbot</h1>
-<p class="lead">This bot only accepting english language right now </p>
+<p class="lead">Welcome... </p>
 
 <div class="row home-row">
   <%= image_tag "https://www.dropbox.com/s/efpxmi9fqrgw1wq/1.png?dl=0", alt: "Chatbot", class: "img-circle" %>
 </div>
+
+<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+    <option value="">Select the language of bot </option>
+    <option value="english">english</option>
+    <option value="estonian">estonian</option>
+</select>
 
 <div class="alert alert-info">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
