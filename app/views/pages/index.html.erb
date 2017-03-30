@@ -5,12 +5,6 @@
   <%= image_tag "https://www.dropbox.com/s/efpxmi9fqrgw1wq/1.png?dl=0", alt: "Chatbot", class: "img-circle" %>
 </div>
 
-<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-    <option value="">Select the language of bot </option>
-    <option value="english">english</option>
-    <option value="estonian">estonian</option>
-</select>
-
 <div class="alert alert-info">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   <strong>Info!</strong> Type something on the text input and press <strong>respond</strong> button to get a response.
@@ -26,7 +20,8 @@
     <div class="input-group">
       <input id="query" type="text" class="form-control" placeholder="Say something to Chiquito...">
       <span class="input-group-btn">
-        <button id="al-ataquerl" class="btn btn-default" type="button">respond</button>
+        <button id="al-ataquerl" class="btn btn-default" type="button">English Bot</button>
+	<button id="al-estonian" class="btn btn-default" type="button">Estonian Bot</button>
       </span>
     </div>
   </div>

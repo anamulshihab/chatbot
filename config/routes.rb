@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   root to: 'high_voltage/pages#show', id: 'index'
 
-  get 'ask_estonian',to: 'application#ask_chiquito'
+  get 'ask_estonian',to: 'application#ask_estonian'
+ 	redirect to: 'high_voltage/pages#show', id: 'about'
 
 end

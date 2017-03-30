@@ -32,4 +32,20 @@ $(document).ready(function(){
     });
   });
 
+
+
+ $('#al-estonian').on('click', function(event) {
+    $.ajax({
+      url: '/ask_estonian',
+      type: 'json',
+      method: 'get',
+      data: { query: $('#query').val() },
+      success: function(data) {
+        $('.chiquibot-response').removeClass('hide');
+        $('#chiquito-response').html(data['response']);
+        $('#query').val('');
+      }
+    });
+  });
+
 });
