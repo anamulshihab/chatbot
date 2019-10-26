@@ -45,7 +45,7 @@ user@computer:/chatbot$ rails s
 
 * Open your web browser and go to [http://localhost:3000](http://localhost:3000) like in all the regular ***Rails*** apps.
 
-*Note: please, try only talk in English  :)*
+*Note: Its a demo project so you might not get answers of all of your questions*
 
 
 
